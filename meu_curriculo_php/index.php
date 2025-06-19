@@ -104,8 +104,7 @@
 
     <section id="habilidades">
         <h2>Habilidades e Hobbies</h2>
-        <?php
-            // Dados (sem alteração)
+        <?php            
             $habilidades = [
                 "PHP" => 8,
                 "HTML" => 9,
