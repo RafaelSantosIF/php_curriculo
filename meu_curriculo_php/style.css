@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+:root {
+    --cor-primaria: #2c3e50;      
+    --cor-secundaria: #3498db;  
+    --cor-fundo-geral: #ecf0f1;  
+    --cor-container: #ffffff;   
+    --cor-texto: #34495e;   
+    --cor-hobby: #2ecc71;        
+    --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08); 
+}
+
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--cor-fundo-geral);
+    color: var(--cor-texto);
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* --- Cabeçalho e Perfil --- */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-container);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid var(--cor-secundaria);
+    transition: transform 0.3s ease;
+}
+
+.perfil img:hover {
+    transform: scale(1.05); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* --- Seções de Conteúdo --- */
+section {
+    background-color: var(--cor-container);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--cor-primaria);
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 3px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: var(--cor-secundaria);
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* --- Listas  --- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--cor-fundo-geral);
+}
+
+li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.periodo {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* --- Barras de Habilidade e Hobby --- */
+.barra-fundo {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 8px;
+    overflow: hidden; 
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.barra-preenchimento {
+    height: 16px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #3498db, #5dade2); 
+    transition: width 0.8s ease-in-out; 
+}
+
+.barra-preenchimento.hobby {
+    background: linear-gradient(90deg, var(--cor-hobby), #58d68d); 
+}
+
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 40px;
+    padding: 20px;
+}
